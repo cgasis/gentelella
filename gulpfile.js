@@ -21,7 +21,7 @@ gulp.task('scripts', function() {
       .pipe(browserSync.stream());
 });
 
-// TODO: Maybe we can simplify how sass compile the minify and unminify version
+// TODO: Maybe we can simplify how sass compile the minify and unminify version chris
 var compileSASS = function (filename, options) {
   return sass('src/scss/*.scss', options)
         .pipe(autoprefixer('last 2 versions', '> 5%'))
